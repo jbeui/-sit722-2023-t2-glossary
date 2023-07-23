@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <img src="\images\devops.png">
+    <h1><%= title %> </h1>
+    <p><%= subtitle %> </p>
+  
+ 
+    <table>
+     <tr>
+       <th>
+        <%= theadid %>
+      </th>
+      <th>
+        <%= theadterm %>
+      </th>
+      <th>
+        <%= theaddesc %>
+      </th>
+      <th>
+        <%= theadref %>
+      </th>
+      </tr>
+
+      <% Glossary.forEach((Glossary) => { %>
+      <tr>
+        <td>
+          <%= Glossary.id %>
+        </td>
+        <td>
+          <%= Glossary.term %>
+        </td>
+        <td>
+          <%= Glossary.description %>
+        </td>
+        <td>
+          <%= Glossary.references %>
+        </td>
+      </tr>
+      <% }); %>
+    </table>
+  </body>
+</html>
