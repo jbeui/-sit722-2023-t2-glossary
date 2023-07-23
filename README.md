@@ -1,1 +1,1 @@
-# -sit722-2023-t2-glossary
+# This is my Repository for SIT722 which houses my DevOps Glossary site
